@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  overflow-x: hidden;
+}
+ @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: #ccc;
+    background: #111;
+    scroll-behavior: smooth;
+  }
+  body::selection{
+    background: rgb(235, 235, 235);
+    color: #111;
+  }
+} 
+html::-moz-selection{
+  background: rgb(0, 255, 179);
+}
+body::selection{
+  background: rgb(0, 255, 191);
+}
+.font-guide{
+    font-family: 'Gloria Hallelujah',cursive;
+    color:#bbb;
+}
+.box{
+  text-align: center;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #20b347;
+  border-radius: 29px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #167e32;
+}
+.ecommerce{
+  animation: animate 9s 255ms infinite ;
+}
+@keyframes animate {
+  0%{
+    transform: translateY(-20px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-20px);
+  }
+}
+.wbox{
+  background: url(../whatsbg.png);
+  background-size: cover;
+}
+.map{
+  filter: invert(90%);
+}
